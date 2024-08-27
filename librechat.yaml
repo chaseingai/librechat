@@ -363,7 +363,7 @@ endpoints:
       modelDisplayLabel: "DEEPNIGHT"
       addParams:
         stream: True
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/DEEPNIGHT.png"
+      iconURL: "https://raw.githubusercontent.com/chaseingai/librechat/main/icons/DEEPNIGHT.png"
 
     # deepseek
     # https://platform.deepseek.com/api_keys
@@ -766,7 +766,7 @@ endpoints:
       forcePrompt: false
       dropParams: ["stop", "frequency_penalty"]
       modelDisplayLabel: "Perplexity"
-      iconURL: "https://raw.githubusercontent.com/chaseingai/librechat/main/icons/Perplexity.svg"
+      iconURL: "https://raw.githubusercontent.com/chaseingai/librechat/main/icons/Perplexity.png"
 
     # ShuttleAI API
     - name: "ShuttleAI"
