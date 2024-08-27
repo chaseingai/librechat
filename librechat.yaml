@@ -766,6 +766,7 @@ endpoints:
       forcePrompt: false
       dropParams: ["stop", "frequency_penalty"]
       modelDisplayLabel: "Perplexity"
+      iconURL: "https://raw.githubusercontent.com/chaseingai/librechat/main/icons/Perplexity.svg"
 
     # ShuttleAI API
     - name: "ShuttleAI"
