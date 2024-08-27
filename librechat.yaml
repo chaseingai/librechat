@@ -319,7 +319,7 @@ endpoints:
       summaryModel: "claude-3-haiku"
       dropParams: ["stream"]
       modelDisplayLabel: "APIpie"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/APIpie.png"
+      iconURL: "https://raw.githubusercontent.com/chaseingai/librechat/main/icons/APIpie.png"
  
     # cohere
     # Model list: https://dashboard.cohere.com/playground/chat
