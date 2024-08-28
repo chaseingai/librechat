@@ -30,14 +30,13 @@ stt:
     model: 'whisper-1'
 
   # Cloud TTS
+  # OpenAI
 tts:
   openai:
     apiKey: '${TTS_API_KEY}'
     model: 'tts-1'
     voices: ['alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer']
-
   # ElevenLabs
-tts:
   elevenlabs:
     apiKey: '${TTS_API_KEY}'
     model: 'eleven_multilingual_v2'
