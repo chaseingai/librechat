@@ -1111,50 +1111,45 @@ endpoints:
       titleConvo: true
       
 # Speech Tab
-  speech:
-  speechTab:
-    conversationMode: true
-    advancedMode: false
-    speechToText:
-      engineSTT: "external"
-      languageSTT: "English (US)"
-      autoTranscribeAudio: true
-      decibelValue: -45
-      autoSendText: 0
-    textToSpeech:
-      engineTTS: "external"
-      voice: "alloy"
-      languageTTS: "en"
-      automaticPlayback: true
-      playbackRate: 1.0
-      cacheTTS: true
-      
-    # OpenAI Whisper
-    # Cloud STT
-      speech:
-  stt:
-    openai:
-      apiKey: '${STT_API_KEY}'
-      model: 'whisper-1'
-    # Cloud TTS
-      speech:
-  tts:
-    openai:
-      apiKey: '${TTS_API_KEY}'
-      model: 'tts-1'
-      voices: ['alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer']
+speechTab:
+  conversationMode: true
+  advancedMode: false
+  speechToText:
+    engineSTT: "external"
+    languageSTT: "English (US)"
+    autoTranscribeAudio: true
+    decibelValue: -45
+    autoSendText: 0
+  textToSpeech:
+    engineTTS: "external"
+    voice: "alloy"
+    languageTTS: "en"
+    automaticPlayback: true
+    playbackRate: 1.0
+    cacheTTS: true
 
-    # ElevenLabs
-    # Cloud TTS
-      speech:
-  tts:
-    elevenlabs:
-      apiKey: '${TTS_API_KEY}'
-      model: 'eleven_multilingual_v2'
-      voices: ['202898wioas09d2', 'addwqr324tesfsf', '3asdasr3qrq44w', 'adsadsa']
-            voice_settings:
-        similarity_boost: '' # number
-        stability: '' # number
-        style: '' # number
-        use_speaker_boost: # boolean
-      pronunciation_dictionary_locators: [''] # list of strings (array)
+  # OpenAI Whisper
+stt:
+  openai:
+    apiKey: '${STT_API_KEY}'
+    model: 'whisper-1'
+
+  # Cloud TTS
+tts:
+  openai:
+    apiKey: '${TTS_API_KEY}'
+    model: 'tts-1'
+    voices: ['alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer']
+
+  # ElevenLabs
+tts:
+  elevenlabs:
+    apiKey: '${TTS_API_KEY}'
+    model: 'eleven_multilingual_v2'
+    voices: ['202898wioas09d2', 'addwqr324tesfsf', '3asdasr3qrq44w', 'adsadsa']
+    voice_settings:
+      similarity_boost: '' # number
+      stability: '' # number
+      style: '' # number
+      use_speaker_boost: # boolean
+    pronunciation_dictionary_locators: [''] # list of strings (array)
